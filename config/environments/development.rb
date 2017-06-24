@@ -31,8 +31,16 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
   
-  config.action_mailer.default_url_options = { host: 'https://belajar-ruby-2-isemanjr.c9users.io', port: 80 }
-
+  config.action_mailer.default_url_options = { host: 'https://belajar-ruby-2-isemanjr.c9users.io' }
+  config.action_mailer.smtp_settings = {
+  address:              'smtp.gmail.com',
+  port:                 587,
+  domain:               'example.com',
+  user_name:            ENV['gmail_user_name'],
+  password:             ENV['gmail_password'],
+  authentication:       'plain',
+  enable_starttls_auto: true  }
+  
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
