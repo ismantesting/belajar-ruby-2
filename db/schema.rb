@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20170715142825) do
   end
 
   create_table "courses", force: :cascade do |t|
-    t.string "tittle"
+    t.string "title"
     t.text "description"
     t.money "price", scale: 2
     t.string "status"
@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(version: 20170715142825) do
 
   create_table "tasks", force: :cascade do |t|
     t.bigint "course_id"
-    t.string "tittle"
+    t.string "title"
     t.text "description"
     t.string "video_url"
     t.string "image"
