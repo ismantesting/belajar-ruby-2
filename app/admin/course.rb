@@ -1,10 +1,10 @@
 ActiveAdmin.register Course do
 
-  permit_params :tittle, :description, :price, :status, :image
+  permit_params :title, :description, :price, :status, :image
   
   show do
     attributes_table do
-      row :tittle
+      row :title
       row :description
       row :price do
         number_to_currency(course.price)
@@ -18,7 +18,7 @@ ActiveAdmin.register Course do
 
   form do |f|
     f.inputs do
-      f.input :tittle
+      f.input :title
       f.input :description
       f.input :price
       f.input :status, as: :select, collection: ["Active", "Not Active"], include_blank: false
