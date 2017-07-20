@@ -1,14 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
+  tittle: MyString
   description: MyText
   price: 
   status: MyString
   image: MyString
 
 two:
-  title: MyString
+  tittle: MyString
   description: MyText
   price: 
   status: MyString
